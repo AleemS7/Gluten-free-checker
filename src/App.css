@@ -1,0 +1,121 @@
+/* src/App.css */
+body, html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  font-family: 'Arial', sans-serif;
+  background-color: #fff8f0; /* Soft, warm background color */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.App {
+  text-align: center;
+  width: 100%;
+  max-width: 600px; /* Adjusted for a more compact look */
+  padding: 40px;
+  box-sizing: border-box;
+  background-color: #FFFFFF; /* Light background for the app area */
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  position: relative; /* For absolute positioning of suggestions */
+}
+
+h1 {
+  color: #4A766E; /* Soothing green for the title */
+}
+
+input[type="text"], button {
+  width: calc(100% - 24px);
+  padding: 15px 20px;
+  margin: 10px 0;
+  font-size: 1.2rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+input[type="text"]:focus {
+  border-color: #88a;
+}
+
+button {
+  background-color: #4CAF50; /* Green button to match the theme */
+  color: white;
+  cursor: pointer;
+  border: none;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+.product-detail {
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  background-color: white; /* Default background for product details */
+}
+
+.product-detail img {
+  max-width: 100%; /* Ensures image is responsive and fits within the container */
+  height: auto;
+  border-radius: 4px; /* Softens the image edges */
+  margin-top: 20px;
+}
+
+ul {
+  list-style-type: none; /* Removes bullet points */
+  padding: 0;
+  background: #FFFFFF; /* Matching the input field */
+  position: absolute;
+  width: calc(100% - 40px); /* Match input field width including padding */
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+  max-height: 200px;
+  overflow-y: auto;
+  border-radius: 0 0 4px 4px;
+  margin-top: 5px;
+}
+
+li {
+  display: block;
+  padding: 10px;
+  color: #333;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+  transition: background-color 0.2s;
+}
+
+li:hover {
+  background-color: #f0f0f0; /* Hover effect for list items */
+}
+
+li:last-child {
+  border-bottom: none; /* Remove bottom border for the last item */
+}
+
+h2, h3 {
+  margin: 20px 0;
+  color: #333;
+}
+
+p {
+  color: #666;
+}
+
+.hover-bear {
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
+  width: 50px; /* Adjust the size as necessary */
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+.hover-bear:hover {
+  transform: scale(1.1); /* Slightly enlarge the image on hover */
+  cursor: pointer;
+}
