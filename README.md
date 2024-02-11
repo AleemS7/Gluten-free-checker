@@ -1,3 +1,29 @@
+Built By Aleem Shaik
+
+Built Using React, Node.js, CSS, Netlify, Open Food Facts API
+
+## Inspiration
+This project was inspired by different stories from close friends and family who have dealt with Celiacs disease which causes an immune reaction to eating gluten, a protein found in wheat, barley, and rye.
+
+## What it does
+It autocompletes searches for various food products which then can be chosen to view their respective gluten information. Clicking on a food product after searching for it shows a detailed page of the products informaiton such as ingredients and most importantly, whether it contains gluten. 
+
+## How we built it
+The Gluten-Free Explorer project was built using React for its interactive UI components, Node.js for development environment setup and dependency management, Netlify for seamless deployment and hosting, and CSS for custom styling and layout enhancements. The main API powering this project was the Open Food Facts API.
+
+## Challenges we ran into
+One of the main challenges I ran into was the translation of ingredients from a foreign language to english. The reason this is important is because after filtering out gluten-free tagged products, I used the ingredient list to filter out any other products that listed gluten containing ingredients. Some of these were not in english because of the global nature of the API. The solution for this would have been a paid one where I could employ google translate API to translate all ingredients to english and then parse them.
+
+## Accomplishments that we're proud of
+One accomplishment I'm proud of is the usage of the autocomplete search feature which makes it much easier for users to use the site rather than having them type in the exact name of the product.
+
+## What we learned
+My main takeway from this project is that simplicity and purposeful design triumphs random bells and whistles. I realized that building a web app with insane design and complex tech is always impressive to see, but building something impactful starts from a clear need and purpose.
+
+## What's next for Gluten-Free Explorer
+One of the main things that Gluten-Free Explorer would benefit from is an alternative gluten-free product display where gluten-free alternatives to a gluten containing product are listed for the user. Obviously this functionality and design concept can be stretched to different allergen filters aswell and would be very impactful.
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
